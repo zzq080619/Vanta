@@ -1,0 +1,71 @@
+<svg viewBox="0 0 680 540" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>TB6612 两片四路电机接线图</title>
+<desc>两片 TB6612 驱动四个 TT 马达的完整引脚连接</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<text x="40" y="36" font-size="14" font-weight="500" fill="#2C2C2A">两片 TB6612 驱动四路电机</text>
+<g>
+<rect x="40" y="60" width="150" height="140" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="115" y="86" font-size="14" font-weight="500" text-anchor="middle" fill="#042C53">STM32F103C8T6</text>
+<text x="115" y="108" font-size="12" text-anchor="middle" fill="#0C447C">TIM2 四路 PWM</text>
+<text x="115" y="128" font-size="12" text-anchor="middle" fill="#0C447C">PA0/PA1/PA2/PA3</text>
+<text x="115" y="148" font-size="12" text-anchor="middle" fill="#0C447C">方向脚 PB0~PB10</text>
+<text x="115" y="168" font-size="12" text-anchor="middle" fill="#0C447C">STBY PB11 / PB12</text>
+</g>
+<g>
+<rect x="270" y="60" width="170" height="210" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="84" font-size="13" font-weight="500" text-anchor="middle" fill="#04342C">TB6612 #1</text>
+<text x="355" y="102" font-size="12" text-anchor="middle" fill="#0F6E56">前轮 LF + RF</text>
+<rect x="286" y="112" width="138" height="40" rx="8" fill="#FFFFFF" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="130" font-size="11" text-anchor="middle" fill="#04342C">PWMA=PA0 AIN=PB0/PB1</text>
+<text x="355" y="144" font-size="11" text-anchor="middle" fill="#0F6E56">A 路 → 左前 LF</text>
+<rect x="286" y="158" width="138" height="40" rx="8" fill="#FFFFFF" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="176" font-size="11" text-anchor="middle" fill="#04342C">PWMB=PA1 BIN=PB5/PB6</text>
+<text x="355" y="190" font-size="11" text-anchor="middle" fill="#0F6E56">B 路 → 右前 RF</text>
+<rect x="286" y="204" width="138" height="40" rx="8" fill="#FFFFFF" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="222" font-size="11" text-anchor="middle" fill="#04342C">STBY = PB12</text>
+<text x="355" y="236" font-size="11" text-anchor="middle" fill="#0F6E56">高电平使能</text>
+</g>
+<g>
+<rect x="270" y="290" width="170" height="210" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="314" font-size="13" font-weight="500" text-anchor="middle" fill="#04342C">TB6612 #2</text>
+<text x="355" y="332" font-size="12" text-anchor="middle" fill="#0F6E56">后轮 LB + RB</text>
+<rect x="286" y="342" width="138" height="40" rx="8" fill="#FFFFFF" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="360" font-size="11" text-anchor="middle" fill="#04342C">PWMA=PA2 AIN=PB7/PB8</text>
+<text x="355" y="374" font-size="11" text-anchor="middle" fill="#0F6E56">A 路 → 左后 LB</text>
+<rect x="286" y="388" width="138" height="40" rx="8" fill="#FFFFFF" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="406" font-size="11" text-anchor="middle" fill="#04342C">PWMB=PA3 BIN=PB9/PB10</text>
+<text x="355" y="420" font-size="11" text-anchor="middle" fill="#0F6E56">B 路 → 右后 RB</text>
+<rect x="286" y="434" width="138" height="40" rx="8" fill="#FFFFFF" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="355" y="452" font-size="11" text-anchor="middle" fill="#04342C">STBY = PB11</text>
+<text x="355" y="466" font-size="11" text-anchor="middle" fill="#0F6E56">高电平使能</text>
+</g>
+<g>
+<rect x="510" y="60" width="130" height="140" rx="12" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="575" y="84" font-size="13" font-weight="500" text-anchor="middle" fill="#4A1B0C">前轮电机</text>
+<text x="575" y="110" font-size="12" text-anchor="middle" fill="#712B13">LF 左前</text>
+<text x="575" y="130" font-size="12" text-anchor="middle" fill="#712B13">→ AO1/AO2</text>
+<text x="575" y="158" font-size="12" text-anchor="middle" fill="#712B13">RF 右前</text>
+<text x="575" y="178" font-size="12" text-anchor="middle" fill="#712B13">→ BO1/BO2</text>
+</g>
+<g>
+<rect x="510" y="290" width="130" height="140" rx="12" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="575" y="314" font-size="13" font-weight="500" text-anchor="middle" fill="#4A1B0C">后轮电机</text>
+<text x="575" y="340" font-size="12" text-anchor="middle" fill="#712B13">LB 左后</text>
+<text x="575" y="360" font-size="12" text-anchor="middle" fill="#712B13">→ AO1/AO2</text>
+<text x="575" y="388" font-size="12" text-anchor="middle" fill="#712B13">RB 右后</text>
+<text x="575" y="408" font-size="12" text-anchor="middle" fill="#712B13">→ BO1/BO2</text>
+</g>
+<path d="M190 100 L270 132" fill="none" stroke="#378ADD" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M190 100 L270 178" fill="none" stroke="#378ADD" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M190 100 L270 362" fill="none" stroke="#378ADD" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M190 100 L270 408" fill="none" stroke="#378ADD" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M440 132 L510 110" fill="none" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M440 178 L510 160" fill="none" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M440 362 L510 340" fill="none" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M440 408 L510 390" fill="none" stroke="#993C1D" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="40" y="520" font-size="12" fill="#5F5E5A">方向脚与 PWM 由 STM32 输出；VM 接电池、VCC 接逻辑电、GND 三处共地（见供电图）</text>
+</svg>
